@@ -1,9 +1,23 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html lang="en">
+{{partial "head.html" .}}
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
+{{partial "nav.html" .}}
 
-<p>
-  Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
-</p>
+{{partial "jumbotron.html" .}}
 
-{{end}}
+{{partial "about.html" .}}
+
+{{partial "service.html" .}}
+
+{{partial "portfolio.html" .}}
+
+{{partial "pricing.html" .}}
+
+{{partial "contact.html" .}}
+
+{{partial "footer.html" .}}
+
+</body>
+</html>

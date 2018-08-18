@@ -1,0 +1,30 @@
+{{ $MyData := (index $.Site.Data .Lang)}}
+{{ $aboutData := $MyData.about }}
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>{{ i18n "about" }}</h2><br>
+        <h4>{{ $aboutData.Intro.AboutSubtitle }}</h4><br>
+        <p>{{ $aboutData.Intro.AboutDescription }}</p>
+        <br><button class="btn btn-default btn-lg">Get in Touch</button>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-signal logo"></span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-globe logo slideanim"></span>
+      </div>
+      <div class="col-sm-8">
+        <h2>{{ $aboutData.OurValues.OurValuesTitle }}</h2><br>
+        <h4><strong>{{ $aboutData.OurValues.MissionTitle }}</strong>{{ $aboutData.OurValues.MissionDescription }} </h4><br>
+        <p><strong>{{ $aboutData.OurValues.VisionTitle }}</strong>{{ $aboutData.OurValues.VisionDescription }}</p>
+      </div>
+    </div>
+  </div>

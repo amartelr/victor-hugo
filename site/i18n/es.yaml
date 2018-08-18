@@ -1,0 +1,17 @@
+- id: about
+  translation: "Sobre la página de la compañía"
+
+- id: services
+  translation: "Servicios"
+
+- id: portfolio
+  translation: "Portafolio"
+
+- id: pricing
+  translation: "Precios"
+
+- id: contact
+  translation: "Contáctenos"
+
+- id: language
+  translation: "Idioma"

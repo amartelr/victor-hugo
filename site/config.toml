@@ -1,9 +1,85 @@
-baseurl = "/"
+baseURL = "/"
 languageCode = "en-us"
-languageLang = "en"
-title = "My new Victor-Hugo site"
+title = "My New Hugo Site"
+DefaultContentLanguage = "en"
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+[languages]
+    [languages.en]
+    title = "My Company Website"
+    weight = 1
+    languageName = "English"
+
+    [[languages.en.menu.main]]
+      url    = "/#about"
+      name   = "About"
+      weight = 1
+    [[languages.en.menu.main]]
+      url    = "/#services"
+      name   = "Services"
+      weight = 2
+    [[languages.en.menu.main]]
+      url    = "/#portfolio"
+      name   = "Portfolio"
+      weight = 3
+    [[languages.en.menu.main]]
+      url    = "/#pricing"
+      name   = "Pricing"
+      weight = 4
+    [[languages.en.menu.main]]
+      url    = "/#contact"
+      name   = "Contact"
+      weight = 5
+    
+    [languages.fr]
+    title = "Mon site Web d'entreprise"
+    weight = 2
+    languageName = "Français"
+
+     [[languages.fr.menu.main]]
+      url    = "/#about"
+      name   = "Sur"
+      weight = 1
+    [[languages.fr.menu.main]]
+      url    = "/#services"
+      name   = "Viabilité"
+      weight = 2
+    [[languages.fr.menu.main]]
+      url    = "/#portfolio"
+      name   = "Portefeuille"
+      weight = 3
+    [[languages.fr.menu.main]]
+      url    = "/#pricing"
+      name   = "Prix"
+      weight = 4
+    [[languages.fr.menu.main]]
+      url    = "/#contact"
+      name   = "Contactez"
+      weight = 5
+
+
+    [languages.es]
+    title = "Sitio web de mi empresa"
+    weight = 3
+    languageName = "Español"
+
+  
+     [[languages.es.menu.main]]
+      url    = "/#about"
+      name   = "Acerca de"
+      weight = 1
+    [[languages.es.menu.main]]
+      url    = "/#services"
+      name   = "Servicios"
+      weight = 2
+    [[languages.es.menu.main]]
+      url    = "/#portfolio"
+      name   = "Portafolio"
+      weight = 3
+    [[languages.es.menu.main]]
+      url    = "/#pricing"
+      name   = "Precios"
+      weight = 4
+    [[languages.es.menu.main]]
+      url    = "/#contact"
+      name   = "Contáctenos"
+      weight = 5
